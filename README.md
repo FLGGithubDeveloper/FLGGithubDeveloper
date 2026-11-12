@@ -12,8 +12,8 @@
 Most of my work lives in private repositories. Project walkthroughs are available on request.
 
 > **How this profile was produced**
-> This is an evidence based profile, not a self written résumé. Its measured findings come from automated analysis of my GitHub repositories: commit history, languages, authorship, and how AI coding agents were used to build them. Career history and descriptions of my working method are self reported.
-> Each section is marked **Measured** (taken directly from repository data) or **Stated** (self reported). Any measured figure can be reproduced live on request. Assessed 12 November 2026.
+> This is an evidence based profile, not a self written résumé. Its findings come from two sources: automated analysis of my GitHub repositories (commit history, languages, authorship, and how AI coding agents were used to build them), and analysis of my AI usage history, which records how I actually make decisions when working with AI models. Career history is self reported.
+> Each section is marked **Measured** (taken directly from repository data), **Observed** (found in my AI usage history) or **Stated** (self reported). Any measured figure can be reproduced live on request. Assessed 12 November 2026.
 
 ---
 
@@ -36,6 +36,26 @@ My foundation is a BSc in Computer Science and Mathematics (University of the We
 **Owned architecture.** New products follow a consistent, intentional stack: a Next.js client, serverless API handlers on Vercel, and Supabase (Postgres) for auth and data with row level security. Schema changes are written as versioned migrations and secrets stay in encrypted environment variables.
 
 **Shipped, not shelved.** The work below is iterated and deployed, not weekend demos. My deepest product carries nearly two hundred commits of real iteration.
+
+---
+
+### Strategic decision making
+
+*Source: Observed. I nominated these focus areas, and each was then checked against the record of my AI working sessions. Only findings supported by that record are shown.*
+
+**Business model before build.** Across at least four separate product concepts, a business model and risk analysis came before any deeper development. Concepts earn further investment through research, pilots and explicit go or no go gates.
+
+**Technology stacks chosen on cost, scale and fit.** Platform choices are weighed, not defaulted. Managed platforms such as Vercel and Supabase are compared with the major clouds (AWS, Azure, Google Cloud) and with existing hosting, and running cost at scale is a stated driver of the architecture. Typical outcomes: serverless functions over always on servers for low volume workloads, and built in capabilities over paid third party services where those services would inflate cost as usage grows.
+
+**Advice shaped to the client.** The client's existing platform is the default architecture, not my preferred stack. Migration advice is justified on both price and strategy, and staged with clear triggers for when a move becomes worthwhile, so a client is never pushed into a rebuild they do not yet need.
+
+**Security as a design input.** AI generated code is put through a security review before release. The record shows exposed keys rotated, API keys restricted, admin and public codebases separated for security reasons, payment flows threat modelled, and two factor authentication set as a baseline requirement.
+
+**Lean footprint and verified standards.** Products are audited to remove what they do not need. Industry standards, licence terms and the health of open source tools are researched before commitment, and plans are changed when that research contradicts them.
+
+**AI as a decision partner, not an oracle.** AI is used to research options, compare trade offs and stress test conclusions. Its proposals are challenged and corrected when they do not fit the situation, and important readings are cross checked across more than one model.
+
+**Commitment to innovation.** Formal innovation management practice, aligned to the ISO 56001 standard, is applied to client work alongside a steady pipeline of new product concepts.
 
 ---
 
@@ -64,6 +84,7 @@ Standing is a judgement drawn from the evidence beside it. The Source column sho
 |---|---|---|---|
 | AI assisted software delivery | Core strength | Roughly three quarters of 492 commits delivered through directed AI coding agents, across more than ten products | Measured |
 | Full stack product engineering | Core strength | TypeScript led portfolio on Next.js, Supabase and Vercel, including a flagship product with nearly 200 commits | Measured |
+| Technology strategy and advisory | Core strength | Stack choices weighed on cost, scale, security and client fit, with a business model analysis ahead of each build | Observed |
 | Product strategy and delivery | Core strength | Fifteen years founding and running a strategy, technology and innovation consultancy, taking ideas to deployed products | Stated |
 | Data and database engineering | Established | Postgres schema and database functions in several products, built on an earlier career in data warehousing and BI (SSIS, SSAS, SSRS, Power BI) | Measured and Stated |
 | Systems architecture | Established | Multiple application systems, containerized deployments, and one reference architecture applied consistently across builds | Measured |
